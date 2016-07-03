@@ -1,0 +1,14 @@
+group 'com.jebware'
+version '0.1-SNAPSHOT'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile project(":library")
+}
